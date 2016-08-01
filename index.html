@@ -1,0 +1,253 @@
+
+  <!--  Social Media fonts  -->
+
+
+
+
+ 
+  <style>
+
+html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section { 
+    display: block;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1;
+  }
+  ol, ul { 
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .sticker{
+    width: 100%;
+  }
+
+.sticker-container{
+  position: fixed;
+  margin-top: 30px;
+  padding-top: 1px;
+  width: 155px;
+  height: 215px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #003764;
+  z-index: 1001;
+}
+
+.sticker-container-container{
+  margin-left: 15px;
+}
+
+
+.free, .percent-off-group, .online, .use-code-sticker,  .details, .shop-now{
+  margin-top: 10px;
+  color:white;
+}
+
+  .free{
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .shipping{
+  margin-top: 0px;
+  color:white;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: -5px;
+
+  }
+
+  .order-sticker{
+    font-size: 13px;
+    font-weight: 100;
+    text-align: center;
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 20px;
+     color: white;
+  }
+
+  .off{
+    font-size:18px;
+    padding-left: 0px;
+    font-weight: 700;
+  }
+
+  .online{
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  }
+
+ .use-code-sticker{
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-size: 11px;
+  letter-spacing: .6px;
+  margin-bottom: 20px;
+  color: white;
+
+ }
+
+ .details{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 8px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  font-weight: 100;
+  letter-spacing: .5px;
+ }
+
+ .shop-now{
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+ }
+
+
+.dresses{
+  text-align: center;
+  color:white;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+
+.carousel-indicators .active{
+     background-color: black;
+   }
+   .carousel-indicators li {
+  background-color: gray;
+   }
+
+
+.shop-now-div{
+position: static;
+  padding-top: 1px;
+  background-color: black;
+  height:30px;
+ }
+
+.xx-sticker{
+  font-size: 16px;
+  font-weight: 700;
+   letter-spacing: .4px;
+   color: white;
+}
+
+.glyphicon{
+  float: right;
+  margin-top: -17px;
+  margin-right:-12px;
+  color:black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1023px){
+.sticker-container{
+display:none;
+}
+
+}
+
+  </style>
+
+
+<section class= "sticker">
+
+<div class='sticker-container-container'>
+<div class='sticker-container'>
+<a><span class='glyphicon glyphicon-remove-circle'>X</span></a>
+
+
+
+
+<div class="row online">ONLINE ONLY. ENDS X/XX.</div>
+
+<div class="percent-and-number-group col-md-12 col-sm-12 col-xs-12">
+
+<div class="free  ">FREE</div>
+<div class="shipping  ">SHIPPING</div>
+<div class="percent-off-group ">
+<!-- <div class="percent col-sm-12 col-xs-12">%</div>
+<div class="off col-sm-12 col-xs-12">OFF</div> -->
+</div>
+</div>
+<div class="order-sticker">ON YOUR $XX ORDER</div>
+
+<div class="use-code-sticker">USE CODE<span class="xx-sticker"> xxxxxx</div>
+<div class="details">Restrictions & Details</div>
+
+
+
+
+</div> <!-- end percent and number group -->
+
+
+</div> <!-- end sticker container  -->
+</div> <!-- end sticker container container  -->
+</section>
+
+
+
+<script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+<script>
+jQuery(".glyphicon").click(function(){
+   jQuery(".sticker-container").hide();
+});
+
+
+  
+
+</script>
+
+
+
+
+
